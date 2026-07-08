@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* more headers goes there */
+/* main - prints whether a random number is postive or negative */
 
-/* betty style doc for function main goes there */
+/* Return (0) - success */
 int main(void)
 {
 	int n;
