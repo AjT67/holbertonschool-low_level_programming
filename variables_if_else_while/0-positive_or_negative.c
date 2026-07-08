@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/** main - prints whether a random number is postive or negative
+/**
+ * main - prints whether a random number is postive or negative
  *
- *Return (0) - success 
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
