@@ -3,7 +3,8 @@
 #include <time.h>
 /** main - prints whether a random number is postive or negative
  *
- *Return (0) - success **/
+ *Return (0) - success 
+ */
 int main(void)
 {
 	int n;
