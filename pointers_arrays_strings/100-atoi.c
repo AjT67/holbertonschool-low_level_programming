@@ -5,7 +5,7 @@
  * _atoi - converts a string to an integer
  * @s: copies the string to an integer
  *
- * Return: 0
+ * Return: num
  */
 int _atoi(char *s)
 {
@@ -25,11 +25,11 @@ int _atoi(char *s)
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			started = 1;
-			num = num * 10 + (s[i] - '0');
+			num = num * 10 - (s[i] - '0');
 		}
 		if (started == 1 && (s[i] < '0' || s[i] > '9'))
 			break;
 		++i;
 	}
-	return (num * sign);
+	return (num);
 }
