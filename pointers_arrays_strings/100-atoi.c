@@ -3,7 +3,7 @@
 
 /**
  * _atoi - converts a string to an integer
- * @s: copies the string to an integer
+ * @s: pointer to the string to convert
  *
  * Return: num
  */
@@ -31,5 +31,5 @@ int _atoi(char *s)
 			break;
 		++i;
 	}
-	return (num);
+	return (-num);
 }
