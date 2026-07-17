@@ -22,7 +22,7 @@ int main(void)
 	{
 		while ((c = getchar()) != '\n' && c != EOF)
 			;
-		printf("Try again!\n");
+		printf("Invalid choice\n");
 		printf("Choice: ");
 	}
 
