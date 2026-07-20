@@ -5,7 +5,7 @@
  * @s: string to search
  * @c: character to locate
  *
- * Return: pointer to the first occurrence of c in s, or NULL if not found
+ * Return: pointer to the first occurrence of c in s, or 0 if not found
  */
 char *_strchr(char *s, char c)
 {
@@ -19,6 +19,6 @@ char *_strchr(char *s, char c)
 	if (*s == c)
 		return (s);
 
-	return (NULL);
+	return (0);
 
 }
