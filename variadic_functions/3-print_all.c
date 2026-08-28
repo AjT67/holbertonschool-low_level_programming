@@ -54,11 +54,12 @@ void print_float(va_list args)
 void print_string(va_list args)
 {
 	char *str = va_arg(args, char *);
+	char *options[2];
 
-	if (str == NULL)
-		str = "(nil)";
+	options[0] = str;
+	options[1] = "(nil)";
 
-	printf("%s", str);
+	printf("%s", options[str == NULL]);
 }
 
 /**
@@ -92,12 +93,3 @@ void print_all(const char * const format, ...)
 				ops[j].f(args);
 				printed = 1;
 			}
-			j++;
-		}
-		i++;
-	}
-
-	va_end(args);
-
-	printf("\n");
-}
