@@ -2,17 +2,6 @@
 #include <stdio.h>
 
 /**
- * struct printer - matches a format char to its printer function
- * @type: the format character ('c', 'i', 'f', 's')
- * @f: pointer to the function that prints the arg
- */
-typedef struct printer
-{
-	char type;
-	void (*f)(va_list);
-} printer_t;
-
-/**
  * print_char - prints a char argument
  * @args: the va_list to pull from
  *
