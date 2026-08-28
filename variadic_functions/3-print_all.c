@@ -93,3 +93,12 @@ void print_all(const char * const format, ...)
 				ops[j].f(args);
 				printed = 1;
 			}
+			j++;
+		}
+		i++;
+	}
+
+	va_end(args);
+
+	printf("\n");
+}
